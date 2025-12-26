@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= SECTION ================= */
+.payment-partner {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.payment-partner h2 {
+  margin-bottom: 40px;
+}
+
+/* ================= COMMON GRID ================= */
+.logo-container {
+  display: grid;
+  gap: 32px;
+  justify-content: center;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item img {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1200px) {
+
+  /* 5 column grid */
+  .logo-container {
+    grid-template-columns: repeat(5, max-content);
+  }
+
+  /* 5th logo se second row start */
+  .logo-item:nth-child(5) {
+    grid-column: 1;
+  }
+
+  /* 🔹 FIRST ROW – LIGHT SHIFT (CENTER FEEL) */
+  .logo-item:nth-child(-n+4) {
+    transform: translateX(60px); /* halka sa shift */
+  }
+
+  .logo-item img {
+    width: 140px;
+  }
+}
+
+/* ================= TABLET + MOBILE ================= */
+@media (max-width: 1199px) {
+  .logo-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    gap: 28px;
+  }
+
+  .logo-item img {
+    width: 110px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .logo-item img {
+    width: 90px;
+  }
+}
