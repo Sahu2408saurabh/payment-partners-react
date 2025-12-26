@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f6fb;
+}
+
+
+.trust-section {
+  padding: 60px 0 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trust-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.trust-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important; /* NO PADDING */
+  height: 130px;
+  margin: 0 !important;
+  flex: 1;
+}
+
+
+.first-row .logo-box {
+  height: 150px;
+}
+
+
+.trust-logo {
+  width: 90%; 
+  height: auto;
+  max-height: 90px; /* Much larger height */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.news24-logo {
+  max-height: 150px; 
+  width: 95%;
+}
+
+
+.second-row .logo-box {
+  height: 140px;
+}
+
+.second-row .trust-logo {
+  max-height: 100px; 
+  width: 85%;
+}
+
+
+/* THIRD ROW - EXTRA MINIMAL GAPS */
+.third-row .logo-box {
+  height: 150px;
+  padding: 0 0.25rem !important; /* Minimal side padding */
+}
+
+.third-row .trust-logo {
+  max-height: 110px;
+  width: 90%; /* Increased from 80% to 90% */
+  margin: 0 -5px; /* Negative margin to bring logos closer */
+}
+
+/* THIRD ROW COLUMNS EXTRA TIGHT */
+.col-md-4 {
+  padding: 0 0.1rem !important; /* Almost no padding */
+}
+
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100%;
+}
+
+.row {
+  --bs-gutter-x: 0 !important; 
+  --bs-gutter-y: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap; 
+}
+
+
+.col-6, .col-sm-4, .col-sm-6, .col-md-2, .col-md-3, .col-md-4 {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+
+.col-md-2 { 
+  flex: 0 0 16.666667%; 
+  max-width: 16.666667%;
+}
+
+.col-md-3 { 
+  flex: 0 0 25%; /* Exactly 1/4 for second row */
+  max-width: 25%;
+}
+
+.col-md-4 { 
+  flex: 0 0 33.333333%; /* Exactly 1/3 for third row */
+  max-width: 33.3333%;
+}
+
+
+@media (max-width: 1200px) {
+  .trust-section {
+    max-width: 100%;
+    padding: 60px 10px 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .trust-title {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  
+  .trust-logo {
+    max-height: 85px;
+    width: 88%;
+  }
+  
+  .news24-logo {
+    max-height: 110px;
+    width: 92%;
+  }
+  
+  .second-row .trust-logo {
+    max-height: 95px;
+    width: 82%;
+  }
+  
+  /* THIRD ROW TABLET */
+  .third-row .logo-box {
+    padding: 0 0.2rem !important;
+  }
+  
+  .third-row .trust-logo {
+    max-height: 105px;
+    width: 95%; /* Increased from 90% to 95% */
+    margin: 0 -4px;
+  }
+  
+  .logo-box {
+    height: 120px;
+  }
+  
+  .first-row .logo-box {
+    height: 140px;
+  }
+  
+  .second-row .logo-box {
+    height: 130px;
+  }
+  
+  .third-row .logo-box {
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  
+  .trust-logo {
+    max-height: 75px;
+    width: 85%;
+  }
+  
+  .news24-logo {
+    max-height: 95px;
+    width: 90%;
+  }
+  
+  .second-row .trust-logo {
+    max-height: 85px;
+    width: 80%;
+  }
+  
+  /* THIRD ROW MOBILE */
+  .third-row .logo-box {
+    padding: 0 0.15rem !important;
+  }
+  
+  .third-row .trust-logo {
+    max-height: 90px;
+    width: 90%; /* Increased from 85% to 90% */
+    margin: 0 -3px;
+  }
+  
+  .logo-box {
+    height: 110px;
+  }
+  
+  .first-row .logo-box {
+    height: 125px;
+  }
+  
+  .second-row .logo-box {
+    height: 120px;
+  }
+  
+  .third-row .logo-box {
+    height: 125px;
+  }
+  
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .trust-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  
+  .trust-logo {
+    max-height: 60px;
+    width: 80%;
+  }
+  
+  .news24-logo {
+    max-height: 75px;
+    width: 85%;
+  }
+  
+  .second-row .trust-logo {
+    max-height: 65px;
+    width: 75%;
+  }
+  
+  /* THIRD ROW SMALL MOBILE */
+  .third-row .logo-box {
+    padding: 0 0.1rem !important;
+  }
+  
+  .third-row .trust-logo {
+    max-height: 70px;
+    width: 85%; /* Increased from 80% to 85% */
+    margin: 0 -2px;
+  }
+  
+  .logo-box {
+    height: 95px;
+  }
+  
+  .first-row .logo-box {
+    height: 105px;
+  }
+  
+  .second-row .logo-box {
+    height: 100px;
+  }
+  
+  .third-row .logo-box {
+    height: 105px;
+  }
+  
+  .trust-row {
+    margin-bottom: 5px;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 400px) {
+  .trust-title {
+    font-size: 22px;
+  }
+  
+  .trust-logo {
+    max-height: 50px;
+    width: 75%;
+  }
+  
+  .news24-logo {
+    max-height: 60px;
+    width: 80%;
+  }
+  
+  .second-row .trust-logo {
+    max-height: 55px;
+    width: 70%;
+  }
+  
+  /* THIRD ROW EXTRA SMALL */
+  .third-row .logo-box {
+    padding: 0 0.05rem !important;
+  }
+  
+  .third-row .trust-logo {
+    max-height: 60px;
+    width: 80%; /* Increased from 75% to 80% */
+    margin: 0 -1px;
+  }
+  
+  .logo-box {
+    height: 85px;
+  }
+  
+  .first-row .logo-box {
+    height: 95px;
+  }
+  
+  .second-row .logo-box {
+    height: 90px;
+  }
+  
+  .third-row .logo-box {
+    height: 95px;
+  }
+}
